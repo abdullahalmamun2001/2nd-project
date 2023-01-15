@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:"roboto";
+   
 }
 
 /* header style start  */
@@ -81,8 +82,8 @@ main file start
     font-size: 18px;
 }
 .banner .image{
-    width: auto;
-    height: auto;
+    width: 70%;
+    height: 400px;
     margin: 30px;
 }
 
@@ -146,7 +147,7 @@ main file start
     margin-top: 100px;
 }
 .figure img{
-    height: 700px;
+    /* width: 100%; */
 }
 
 
@@ -244,6 +245,9 @@ main file start
 /* mobile device  */
 
 @media screen and (max-width:576px) {
+    *{
+        margin-left: 3px;
+    }
     .header{
         width: 100%;
         background-color: rgb(241, 234, 221);
@@ -260,16 +264,19 @@ main file start
         font-size: 26px;
         /* padding:15px ; */
     }
-    .details-title h2{
+    .details-title-heding{
         font-size: 45px;
         font-weight: 700px;   
+    }
+    .banner img{
+        width: 100%;
     }
 
     .brand-details{
        width: 100vw;
     }
     .banner .image{
-        width: 500px;
+        width:100%;
         height: 400px;
         margin: 30px;
     }
@@ -283,12 +290,18 @@ main file start
     
         grid-template-columns: repeat(1, 1fr);
     }
+    .image img{
+        height: 100%;
+    }
         /*  */
 
     .love-enjoy{
         display: flex;
         flex-direction:column;
 
+    }
+    .figure img{
+        width: 100%;
     }
         /*  */
 
