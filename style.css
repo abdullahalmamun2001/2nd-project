@@ -9,8 +9,8 @@
 
 /* header style start  */
 .header{
-    background-color: rgb(213, 217, 220);
-    display: flex;
+    background-color: rgb(239, 243, 246);
+    display: flex; 
     justify-content: space-between;
     margin-top: 20px;
 }
@@ -28,18 +28,18 @@
 }
 .navbar{
     display: flex;
-    margin: 10px;
-    flex-direction: row;   
+    flex-direction: row;
+    margin: 20px;
 }
 .navbar li {
     list-style: none;
     
 }
-.navbar li a {
+.navbar li a{
     font-weight: 600;
     text-decoration: none;
     font-size: 17px;
-    padding:20px ;
+    padding:80px ;
 }
 
 /* --------------
@@ -49,13 +49,10 @@ main file start
 /* section brand details  */
 
 .brand-details{
-    background-color: rgb(213, 217, 220);
+    background-color: rgb(239, 243, 246);
 
 }
 .details-title{
-  /* height: auto;
-  width: 90%; */
-  /* position: absolute; */
   right: 100px;
   left: 100px; 
   top: 159px;
@@ -106,6 +103,8 @@ main file start
     font-weight: 400px;
     color: gray;
     margin-bottom: 10px;
+    border-left: 3px solid black;
+    padding-left:10px ;
 
 }
 .span-1{
@@ -127,15 +126,34 @@ main file start
     display: flex;
     flex-direction: row;
     margin: 20px;
+    padding: 30px;
+}
+.experiens{
+    text-align: center;
+    height: 100px;
+    width: 120px;
+    background-color: orange;
+    border-radius: 5px;
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+}
+.exp{
+    font-size: 14px;
 }
 .version-name{
     /* font-size: 29px; */
     font-weight: 700;
     margin-bottom: 16px;
+    border-left: 4px solid orange;
+    padding-left:15px ;
 
 }
 .version-quality h1{
     font-size: 18px;
+}
+.version-quality .version-name, .version-details{
+    border-left: 6px solid orange;
 }
 .version{
     background-color: rgb(194, 195, 197);
@@ -146,9 +164,8 @@ main file start
 .version-count{
     margin-top: 100px;
 }
-.figure img{
-    /* width: 100%; */
-}
+/* .figure img{
+} */
 
 
 /* something other section style  */
@@ -163,7 +180,6 @@ main file start
 }
 .something-others p{
     font-size: 16px;
-    /* margin-left:40px ; */
 
 }
 .there{
@@ -183,8 +199,17 @@ main file start
     width: 150px;
     padding: 30px;
     border: 1px solid black;
-    /* border-radius: 30px; */
     margin: 16px;
+}
+.box:hover{
+    background-color: green;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    transition: 1.5rem;
+    transition-delay: 1s;
 }
 .box h3{
     font-size: 30px;
@@ -194,11 +219,6 @@ main file start
 .box p{
     font-size: 14px;
 
-}
-.box:hover{
-    background-color: green;
-    border-radius: 50%;
-    cursor: pointer;
 }
 
 
@@ -229,6 +249,44 @@ main file start
     width: 90px;
 }
 
+/* extra section style  */
+
+.tour{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 10px;
+}
+.tour-place{
+    background-color: rgb(225, 231, 231);
+    border: 1px solid;
+}
+
+.tour-title{
+    font-size: 40px;
+    text-align: center;
+    margin:40px 0;
+    color: rgb(120, 37, 54);
+}
+.place-image{
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+
+}
+.place-name{
+    margin: 15px;
+    font-weight: 700;
+    font-size: 30px;
+}
+.about-place{
+    font-size: 17px;
+    left: 0;
+
+}
+
 /* footer style  */
 .footer{
     background-color: rgb(203, 169, 124);
@@ -236,18 +294,22 @@ main file start
     margin: 79px 30px;
     font-size: 10px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
+    padding-top: 10px;
 
-}.footer{padding-top: 10px;}
+}
 
-/* media quaries start  */
+/*-------------------
+media quaries start  
+----------------------*/
 
 /* mobile device  */
 
 @media screen and (max-width:576px) {
     *{
-        margin-left: 3px;
+        margin: 0;
     }
+/* header responsive start  */
     .header{
         width: 100%;
         background-color: rgb(241, 234, 221);
@@ -258,12 +320,18 @@ main file start
         font-weight: 750;
         
     } 
+    /* navbar responsive  */
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
     .navbar li a {
         font-weight: 600;
-        /* text-decoration: none; */
         font-size: 26px;
-        /* padding:15px ; */
+        position: relative;
     }
+
+    /* first section brand details responve start  */
     .details-title-heding{
         font-size: 45px;
         font-weight: 700px;   
@@ -281,7 +349,7 @@ main file start
         margin: 30px;
     }
 
-    /*  */
+    /* our feature section start */
     .our-features{
         flex-direction: column-reverse;
         text-align: center;
@@ -303,7 +371,11 @@ main file start
     .figure img{
         width: 100%;
     }
-        /*  */
+    .experiens{
+        left: 180px;
+        top: 30px;
+    }
+        /*  some effect section start */
 
     .some-facts{
         grid-template-columns: repeat(1, 1fr);
@@ -313,14 +385,29 @@ main file start
         
 
     }
+    .there{
+        margin: 30px;
+    }
     
-    /*  */
+    /* sponser section start */
 
     .sponsors{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         justify-content: center;
         align-items: center;
+    }
+
+    /* extra section style  */
+
+    .tour{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+
+    /*  footer start*/
+    .footer{
+        width: 100%;
     }
 
 }
